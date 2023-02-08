@@ -3,11 +3,54 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'B nazanin';
+    text-decoration: none;
+    transition: .25s linear;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(218, 238, 255);
 }
 
 header {
     width: 100%;
     height: 50px;
-    background: red;
+    background: rgb(47, 105, 157);
     padding: 5px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+header>p {
+    font-size: large;
+}
+
+header * {
+    background: red;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .15s linear;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
