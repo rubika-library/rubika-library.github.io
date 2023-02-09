@@ -52,8 +52,53 @@ header>p {
     border-radius: 10px;
     transition: .15s linear;
     background: #5b4d85;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
 }
 
+
 .button:hover {
+    justify-content: center;
     transform: scale(1.1);
+}
+
+.button::before {
+    content: '';
+    width: 30px;
+    height: 2.5px;
+    background: black;
+    border-radius: 1px;
+}
+
+.button .button_black_line {
+    width: 30px;
+    height: 2.5px;
+    background: black;
+    border-radius: 1px;
+}
+
+.button::after {
+    content: '';
+    width: 30px;
+    height: 2.5px;
+    background: black;
+    border-radius: 1px;
+}
+
+.button:hover .button_black_line {
+    display: none;
+}
+
+.button:hover::before {
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 1px;
+}
+
+.button:hover::after {
+    position: absolute;
+    transform: rotate(-45deg);
 }
