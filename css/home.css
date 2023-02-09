@@ -43,3 +43,7 @@ footer .part {
     margin-left: 5px;
     border-radius: 15px;
 }
+
+footer a {
+    color: #001f61;
+}
