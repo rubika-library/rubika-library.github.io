@@ -17,6 +17,7 @@ body {
     height: 100%;
     background: rgb(218, 238, 255);
     padding: 0 5px;
+    overflow-y: scroll;
 }
 
 header {
