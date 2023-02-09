@@ -62,8 +62,11 @@ header>p {
 
 
 .button:hover {
-    justify-content: center;
     transform: scale(1.1);
+}
+
+.button2 {
+    justify-content: center;
 }
 
 .button::before {
@@ -89,17 +92,17 @@ header>p {
     border-radius: 1px;
 }
 
-.button:hover .button_black_line {
+.button2 .button_black_line {
     display: none;
 }
 
-.button:hover::before {
+.button2::before {
     position: absolute;
     transform: rotate(45deg);
     border-radius: 1px;
 }
 
-.button:hover::after {
+.button2::after {
     position: absolute;
     transform: rotate(-45deg);
 }
