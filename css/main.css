@@ -44,7 +44,7 @@ header>a {
 }
 
 header>p {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .button {
@@ -110,7 +110,7 @@ nav {
     direction: rtl;
     width: 35%;
     height: calc(100% - 70px);
-    padding: 10px 5px;
+    padding: 10px 15px;
     border-radius: 20px 0 0 20px;
 }
 
@@ -140,6 +140,7 @@ nav ul li::before {
     width: 6px;
     height: 6px;
     border-radius: 100%;
+    margin-left: 5px;
 }
 
 nav ul li:last-child {
