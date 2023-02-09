@@ -21,27 +21,29 @@ body {
 header {
     width: 100%;
     height: 50px;
-    background: rgb(47, 105, 157);
-    padding: 5px;
+    background: #8c75d1;
+    padding: 5px 10px;
     margin: 10px 5px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-header>img {
+header>a {
     width: 40px;
     height: 40px;
+}
+
+header>a>img {
     border-radius: 10px;
+    color: blacks;
+    width: 100%;
+    height: 100%;
 }
 
 header>p {
-    font-size: large;
-}
-
-header * {
-    background: red;
+    font-size: x-large;
 }
 
 .button {
@@ -49,6 +51,7 @@ header * {
     height: 40px;
     border-radius: 10px;
     transition: .15s linear;
+    background: #5b4d85;
 }
 
 .button:hover {
