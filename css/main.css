@@ -16,6 +16,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgb(218, 238, 255);
+    padding: 0 5px;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
     height: 50px;
     background: #8c75d1;
     padding: 5px 10px;
-    margin: 10px 5px;
+    margin: 10px 0;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -35,11 +36,11 @@ header>a {
     height: 40px;
 }
 
-header>a>img {
+.logo {
     border-radius: 10px;
     color: blacks;
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
 }
 
 header>p {
@@ -101,4 +102,12 @@ header>p {
 .button:hover::after {
     position: absolute;
     transform: rotate(-45deg);
+}
+
+nav {
+    background: #d9ccff;
+    position: relative;
+    direction: rtl;
+    width: 30%;
+    height: calc(100% - 70px);
 }
