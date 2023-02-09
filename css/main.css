@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'B nazanin';
+    text-decoration: none;
+    transition: .25s linear;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(218, 238, 255);
+    padding: 0 5px;
+    overflow-y: scroll;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #8c75d1;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>a {
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    border-radius: 10px;
+    color: blacks;
+    width: 40px;
+    height: 40px;
+}
+
+header>p {
+    font-size: xx-large;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .15s linear;
+    background: #5b4d85;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button2 {
+    justify-content: center;
+}
+
+.button::before {
+    content: '';
+    width: 30px;
+    height: 2.5px;
+    background: black;
+    border-radius: 1px;
+}
+
+.button .button_black_line {
+    width: 30px;
+    height: 2.5px;
+    background: black;
+    border-radius: 1px;
+}
+
+.button::after {
+    content: '';
+    width: 30px;
+    height: 2.5px;
+    background: black;
+    border-radius: 1px;
+}
+
+.button2 .button_black_line {
+    display: none;
+}
+
+.button2::before {
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 1px;
+}
+
+.button2::after {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+nav {
+    background: #d9ccff;
+    position: relative;
+    direction: rtl;
+    width: 35%;
+    height: calc(100% - 70px);
+    padding: 10px 15px;
+    border-radius: 20px 0 0 20px;
+}
+
+nav .logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav ul li {
+    height: 30px;
+    border-bottom: 2px solid black;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 10px;
+}
+
+nav ul li::before {
+    content: '';
+    background: black;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+nav ul li:last-child {
+    border: none;
+}
