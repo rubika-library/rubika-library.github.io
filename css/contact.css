@@ -1,4 +1,35 @@
+nav {
+    background: #d9ccff;
+    position: relative;
+    direction: rtl;
+    width: 35%;
+    height: 100%;
+    padding: 10px 15px;
+    border-radius: 20px 0 0 20px;
+}
+
 .articles {
     width: 100%;
     height: 100%;
+    direction: rtl;
+}
+
+.articles .way {
+    width: 300px;
+    height: 250px;
+    background: #88b9e3;
+    position: relative;
+    border-radius: 20px;
+}
+
+.e1 {
+    top: 70px;
+}
+
+.e2 {
+    top: 320px;
+}
+
+.e3 {
+    top: 570px;
 }
