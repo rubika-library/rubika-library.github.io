@@ -1,10 +1,10 @@
 document.querySelector('header .button').addEventListener('click', e => {
     let nav = document.getElementsByTagName('nav')[0];
-    let margin = nav.style.marginRight;
-    if (margin == '0px') {
-        nav.style.marginRight = 'calc(-100% - 10px)';
+    let right = nav.style.right;
+    if (right == 'calc(-100% - 10px)') {
+        nav.style.right = '-65%';
     } else {
-        nav.style.marginRight = '0px';
+        nav.style.right = 'calc(-100% - 10px)';
     }
     document.querySelector('header .button').classList.toggle('button2');
 });
