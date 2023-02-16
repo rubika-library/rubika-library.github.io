@@ -12,17 +12,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 35px;
+}
+
+
+.articles .line:first-child {
+    justify-content: flex-end;
+}
+
+.articles .line:last-child {
+    justify-content: flex-start;
 }
 
 .articles .line:not(:last-child) {
     margin-bottom: 50px;
 }
-
-/*
-.articles .line:first-child {
-    direction: rtl;
-} */
 
 .articles .way {
     width: 300px;
@@ -34,6 +38,10 @@
     flex-direction: column;
 }
 
+.articles * {
+    font-family: 'comic';
+}
+
 .way .header {
     width: 100%;
     font-size: large;
@@ -41,6 +49,7 @@
     padding-right: 20px;
     display: flex;
     align-items: center;
+    font-family: 'comic';
 }
 
 .way .link {
