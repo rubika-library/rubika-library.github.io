@@ -41,7 +41,7 @@
 }
 
 .articles * {
-    font-family: 'comic';
+    font-family: 'comic', 'b nazanin';
 }
 
 .version .header {
@@ -63,4 +63,14 @@
     padding: 5px 10px;
     border-radius: 10px;
     margin-top: 10px;
+    overflow-y: scroll;
+}
+
+#v12 a {
+    color: red;
+    font-size: large;
+}
+
+.describtion .space {
+    margin-right: 7px;
 }
