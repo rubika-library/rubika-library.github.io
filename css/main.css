@@ -15,7 +15,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: rgb(218, 238, 255);
+    background: #daeeff;
     padding: 0 5px;
     overflow-y: scroll;
 }
@@ -100,7 +100,6 @@ header>p {
 .button2::before {
     position: absolute;
     transform: rotate(45deg);
-    border-radius: 1px;
 }
 
 .button2::after {
@@ -113,7 +112,7 @@ nav {
     position: relative;
     direction: rtl;
     width: 35%;
-    height: calc(100% - 70px);
+    height: 100%;
     padding: 10px 15px;
     border-radius: 20px 0 0 20px;
 }

@@ -2,3 +2,13 @@
     font-family: 'B nazanin';
     src: url(../fonts/b\ nazanin.ttf);
 }
+
+@font-face {
+    font-family: 'comic';
+    src: url(../fonts/comic.ttf);
+}
+
+@font-face {
+    font-family: 'JBMono';
+    src: url(../fonts/JetBrainsMono-Medium.ttf);
+}

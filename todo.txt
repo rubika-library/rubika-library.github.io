@@ -1,1 +1,0 @@
-add logo to images/logo.png
