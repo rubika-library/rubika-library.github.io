@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتابخانه روبیکا - نمونه کد ها</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/samples.css">
+    <script src="../js/functions.js"></script>
+    <link rel="icon" href="../images/logo.png">
+</head>
+
+<body>
+    <header>
+        <a href="..">
+            <img src="../images/logo.png" alt="logo" class="logo">
+        </a>
+        <p>
+            نمونه کد ها
+        </p>
+        <span></span>
+    </header>
+    <div class="articles">
+        <div class="articles">
+            <div class="line">
+                <article class=sample>
+                    <div class="header">
+                        <b>ربات ثبت نام کلاس های درسی</b>
+                    </div>
+                    <code class="describtion">
+                        require_once 'vendor/autoload.php';
+                        <br>
+                        <br>
+                        $classes = [
+                        <br>
+                            'تقویتی',
+                        <br>
+                            'کنکور'
+                        <br>
+                        ];
+                        <br>
+                        <br>
+                        Fast(
+                        <br>
+                            function ($update, $obj) use ($classes) {
+                        <br>
+                                foreach ($update as $message) {
+                        <br>
+                        <br>
+                                    $message = isset($message['message']) ? $message['message'] : $message;
+                        <br>
+                                    $text = $message['text'];
+                        <br>
+                                    $user_id = $message['author_object_guid'];
+                        <br>
+                        <br>
+                                    $req = explode(' ', $text); // message format : شرکت در کلاس [$CLASSES] [$PHONE or $EMAIL]
+                        <br>
+                        <br>
+                        <br>
+                                    if ($req[0] == 'ثبت نام در کلاس' && in_array($req[1], $classes)) {
+                        <br>
+                        <br>
+                                        $requests = json_decode(file_get_contents('request.json'), true);
+                        <br>
+                                        $requests[] = "{$req[2]}";
+                        <br>
+                        <br>
+                                        file_put_contents('request.json', json_encode($requests));
+                        <br>
+                        <br>
+                                        $obj->sendMessage($user_id, 'درخواست شما ثبت شد.');                            
+                        <br>
+                                }
+                        <br>
+                        <br>
+                            }
+                        <br>
+                        },
+                        <br>
+                            9123456789 // your phone
+                        <br>
+                        );
+                        </code>
+                </article>
+                <span></span>
+            </div>
+            <div class="line">
+                <article class=sample>
+                    <div class="header">
+                        <b>ربات تبدیل متن به فایل</b>
+                    </div>
+                    <div class="describtion coming">به زودی</div>
+                </article>
+                <span></span>
+            </div>
+            <div class="line">
+                <article class=sample>
+                    <div class="header">
+                        <b>ربات اسکرین شات از سایت</b>
+                    </div>
+                    <div class="describtion coming">به زودی</div>
+                </article>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="part">
+            <div>
+                <div class="dot"></div>
+                <div class="part_title">پیوند ها</div>
+            </div>
+
+            <a href="https://github.com/AmirrezaFiroz/rubika">کتابخانه</a>
+            <a href="https://packagist.org/packages/rubika/rubika">packagist</a>
+        </div>
+        <div class="part">
+            <div>
+                <div class="dot"></div>
+                <div class="part_title">اسناد</div>
+            </div>
+
+            <a href="../docs">فهرست</a>
+            <a href="../versions">نسخه ها</a>
+        </div>
+        <div class="part">
+            <div>
+                <div class="dot"></div>
+                <div class="part_title">اخبار</div>
+            </div>
+
+            <a href="https://t.me/rubika_library_ch">کانال تلگرام</a>
+            <a href="https://rubika.ir/rubika_library_ch">کانال روبیکا</a>
+        </div>
+    </footer>
+</body>
+
+<script src="../js/main.js"></script>
+
+</html>
