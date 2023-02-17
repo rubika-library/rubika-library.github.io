@@ -29,9 +29,7 @@
 }
 
 .articles .sample {
-    width: 40%;
-    min-width: 300px;
-    max-width: 500px;
+    width: 400px;
     height: 100%;
     background: #88b9e3;
     border-radius: 10px;
@@ -62,7 +60,9 @@
     padding: 5px 10px;
     border-radius: 10px;
     margin-top: 10px;
-    overflow-y: scroll;
+    overflow: scroll;
+    font-family: 'JBMono';
+    font-size: small;
 }
 
 .coming {

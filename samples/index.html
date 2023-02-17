@@ -31,7 +31,56 @@
                     <div class="header">
                         <b>ربات ثبت نام کلاس های درسی</b>
                     </div>
-                    <div class="describtion">describtion</div>
+                    <code class="describtion">
+                        require_once 'vendor/autoload.php';
+                        <br>
+                        <br>
+                        $classes = [
+                        <br>
+                            'تقویتی',
+                        <br>
+                            'کنکور'
+                        <br>
+                        ];
+                        <br>
+                        <br>
+                        Fast(
+                        <br>
+                            function ($update, $obj) use ($classes) {
+                        <br>
+                                foreach ($update as $message) {
+                        <br>
+                        <br>
+                                    $message = isset($message['message']) ? $message['message'] : $message;
+                        <br>
+                                    $text = $message['text'];
+                        <br>
+                                    $user_id = $message['author_object_guid'];
+                        <br>
+
+                        <br>
+                                    $req = explode(' ', $text); // message format : شرکت در کلاس [$CLASSES] [$PHONE or $EMAIL]
+                        <br>
+                                    if ($req[0] == 'ثبت نام در کلاس' && in_array($req[1], $classes)) {
+                        <br>
+                                        $requests = json_decode(file_get_contents('request.json'), true);
+                        <br>
+                                        $requests[] = "{$req[2]}";
+                        <br>
+                                        file_put_contents('request.json', $requests);
+                        <br>
+                                        $obj->sendMessage($user_id, 'درخواست شما ثبت شد.');                            
+                        <br>
+                                }
+                        <br>
+                            }
+                        <br>
+                        },
+                        <br>
+                            9123456789 // your phone
+                        <br>
+                        );
+                        </code>
                 </article>
                 <span></span>
             </div>
