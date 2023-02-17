@@ -59,14 +59,13 @@
     width: 100%;
     height: 100%;
     background: #a7cef1;
-    direction: rtl;
     padding: 5px 10px;
     border-radius: 10px;
     margin-top: 10px;
     overflow-y: scroll;
 }
 
-#v12 a {
-    color: red;
+.coming {
+    direction: rtl;
     font-size: large;
 }
