@@ -57,21 +57,26 @@
                         <br>
                                     $user_id = $message['author_object_guid'];
                         <br>
-
                         <br>
                                     $req = explode(' ', $text); // message format : شرکت در کلاس [$CLASSES] [$PHONE or $EMAIL]
                         <br>
+                        <br>
+                        <br>
                                     if ($req[0] == 'ثبت نام در کلاس' && in_array($req[1], $classes)) {
+                        <br>
                         <br>
                                         $requests = json_decode(file_get_contents('request.json'), true);
                         <br>
                                         $requests[] = "{$req[2]}";
                         <br>
-                                        file_put_contents('request.json', $requests);
+                        <br>
+                                        file_put_contents('request.json', json_encode($requests));
+                        <br>
                         <br>
                                         $obj->sendMessage($user_id, 'درخواست شما ثبت شد.');                            
                         <br>
                                 }
+                        <br>
                         <br>
                             }
                         <br>
