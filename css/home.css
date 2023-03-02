@@ -47,3 +47,11 @@ footer .part {
 footer a {
     color: #1f83e684;
 }
+
+.news {
+    background: red;
+    width: calc(100% - 5px);
+    display: flex;
+    justify-content: center;
+    padding: 10px 4px;
+}
