@@ -49,9 +49,32 @@ footer a {
 }
 
 .news {
-    background: red;
     width: calc(100% - 5px);
     display: flex;
     justify-content: center;
     padding: 10px 4px;
+}
+
+.news .line {
+    background: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    padding: 0 10px;
+    box-sizing: content-box;
+}
+
+.news .line .new {
+    display: flex;
+    flex-direction: column;
+    background: red;
+}
+
+.news .line .new:not(:first-child) {
+    margin-top: 20px;
+}
+
+.news .line .new:last-child {
+    margin-top: 40px;
 }
