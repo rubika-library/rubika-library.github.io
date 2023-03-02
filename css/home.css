@@ -56,25 +56,26 @@ footer a {
 }
 
 .news .line {
-    background: blue;
     width: 100%;
     display: flex;
     justify-content: space-between;
     direction: rtl;
-    padding: 0 10px;
+    padding: 0 15px;
     box-sizing: content-box;
+}
+
+.news .line .new:not(:first-child) {
+    margin-top: 50px;
+}
+
+.news .line .new:last-child {
+    margin-top: 100px;
 }
 
 .news .line .new {
     display: flex;
     flex-direction: column;
     background: red;
-}
-
-.news .line .new:not(:first-child) {
-    margin-top: 20px;
-}
-
-.news .line .new:last-child {
-    margin-top: 40px;
+    width: 200px;
+    height: 200px;
 }
