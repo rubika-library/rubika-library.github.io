@@ -57,6 +57,17 @@ footer a {
     padding: 10px 4px;
 }
 
+nav {
+    background: #d9ccff;
+    position: fixed;
+    direction: rtl;
+    width: 35%;
+    height: 90%;
+    padding: 10px 15px;
+    border-radius: 20px 0 0 20px;
+    top: 70px;
+}
+
 .news .line {
     width: 100%;
     display: flex;
@@ -103,17 +114,6 @@ footer a {
 .news .new .describtion {
     overflow-y: scroll;
     height: 100%;
-}
-
-
-nav {
-    background: #d9ccff;
-    position: absolute;
-    direction: rtl;
-    width: 35%;
-    height: 100%;
-    padding: 10px 15px;
-    border-radius: 20px 0 0 20px;
 }
 
 nav .logo {
