@@ -3,7 +3,7 @@
 footer {
     width: calc(100% - 5px);
     height: 300px;
-    background: #423a5a;
+    background: #584987a9;
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ footer .part {
 }
 
 footer a {
-    color: #1f83e684;
+    color: #5b4fff;
 }
 
 .news {
