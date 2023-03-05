@@ -53,19 +53,10 @@ footer a {
 .news {
     width: calc(100% - 5px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 10px 4px;
-}
-
-nav {
-    background: #d9ccff;
-    position: fixed;
-    direction: rtl;
-    width: 35%;
-    height: 90%;
-    padding: 10px 15px;
-    border-radius: 20px 0 0 20px;
-    top: 70px;
+    align-items: center;
+    height: 100%;
 }
 
 .news .line {
@@ -75,15 +66,16 @@ nav {
     direction: rtl;
     padding: 0 15px;
     box-sizing: content-box;
-    margin-top: 30px;
+    margin: 30px 0;
+    height: 200px;
 }
 
-.news .line .new:not(:first-child) {
-    margin-top: 200px;
+.news .line .new:first-child {
+    margin-right: 10px;
 }
 
 .news .line .new:last-child {
-    margin-top: 400px;
+    margin-left: 10px;
 }
 
 .news .line .new {
@@ -91,7 +83,6 @@ nav {
     flex-direction: column;
     background: #76bfff85;
     width: 200px;
-    height: 200px;
     padding: 10px 5px;
     border-radius: 20px;
 }
@@ -114,6 +105,17 @@ nav {
 .news .new .describtion {
     overflow-y: scroll;
     height: 100%;
+}
+
+nav {
+    background: #d9ccff;
+    position: fixed;
+    direction: rtl;
+    width: 35%;
+    height: 90%;
+    padding: 10px 15px;
+    border-radius: 20px 0 0 20px;
+    top: 70px;
 }
 
 nav .logo {
