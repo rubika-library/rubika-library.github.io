@@ -1,7 +1,9 @@
+@import url(fonts.css);
+
 footer {
     width: calc(100% - 5px);
     height: 300px;
-    background: #423a5a;
+    background: #584987a9;
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: center;
@@ -45,5 +47,107 @@ footer .part {
 }
 
 footer a {
-    color: #1f83e684;
+    color: #5b4fff;
+}
+
+.news {
+    width: calc(100% - 5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.news .line {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    direction: rtl;
+    padding: 0 15px;
+    box-sizing: content-box;
+    margin: 30px 0;
+    height: 200px;
+}
+
+.news .line .new:first-child {
+    margin-right: 10px;
+}
+
+.news .line .new:last-child {
+    margin-left: 10px;
+}
+
+.news .line .new {
+    display: flex;
+    flex-direction: column;
+    background: #76bfff85;
+    width: 300px;
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+
+.news .line .new * {
+    font-family: 'B nazanin';
+}
+
+.news .new .header {
+    height: 30px;
+    display: flex;
+    border-radius: 20px;
+    background: #76bfff;
+    justify-content: flex-start;
+    direction: rtl;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.news .new .describtion {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+nav {
+    background: #d9ccff;
+    position: fixed;
+    direction: rtl;
+    width: 35%;
+    height: 90%;
+    padding: 10px 15px;
+    border-radius: 20px 0 0 20px;
+    top: 70px;
+}
+
+nav .logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav ul li {
+    height: 30px;
+    border-bottom: 2px solid black;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 10px;
+}
+
+nav ul li::before {
+    content: '';
+    background: black;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+nav ul li:last-child {
+    border: none;
 }
