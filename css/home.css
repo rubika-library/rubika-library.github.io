@@ -62,7 +62,8 @@ footer a {
 .news .line {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     direction: rtl;
     padding: 0 15px;
     box-sizing: content-box;
@@ -82,7 +83,7 @@ footer a {
     display: flex;
     flex-direction: column;
     background: #76bfff85;
-    width: 200px;
+    width: 300px;
     padding: 10px 5px;
     border-radius: 20px;
 }
